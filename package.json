@@ -1,0 +1,27 @@
+{
+  "name": "hogman",
+  "version": "0.1.0",
+  "description": "PostHog API CLI bridge for LLM consumption",
+  "type": "module",
+  "bin": { "hogman": "./src/index.ts" },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "start": "bun src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile hogman",
+    "build:binaries": "bun run scripts/build-binaries.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mike-grant/hogman.git"
+  },
+  "keywords": ["posthog", "cli", "analytics", "llm", "hogql", "mcp"],
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.4.0"
+  }
+}
