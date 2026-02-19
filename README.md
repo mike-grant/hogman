@@ -10,7 +10,14 @@ hogman wraps the PostHog REST API as a shell CLI with structured `--json` output
 
 ## Install
 
-### Download a binary (recommended)
+### Homebrew (macOS, recommended)
+
+```bash
+brew tap mike-grant/tap
+brew install hogman
+```
+
+### Download a binary
 
 Grab the latest release for your platform from the [releases page](https://github.com/mike-grant/hogman/releases):
 
